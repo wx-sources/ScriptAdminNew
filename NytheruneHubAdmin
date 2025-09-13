@@ -19,7 +19,7 @@ local TweenService = game:GetService("TweenService")
 -- Criação da janela
 local Window = Rayfield:CreateWindow({
     Name = "Nytherune Hub Developers",
-    LoadingTitle = "Script Secreto de Administradores // Needs Key",
+    LoadingTitle = "Script Secreto de Administradores",
     LoadingSubtitle = "by Wx",
     ConfigurationSaving = {
         Enabled = true,
@@ -28,13 +28,13 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = true,
     KeySettings = {
-        Title = "Nytherune Hub Developers | Key",
-        Subtitle = "Insira a chave para continuar",
-        Note = "A chave pode ser fornecida por um Dev",
+        Title = "Seja bem vindo ao Nytherune Hub!",
+        Subtitle = "Se você já executou o script e ele apareceu, pode ignorar isso.",
+        Note = "© Nytherune Hub Developers All Rights Reserved 2024-2025.",
         FileName = "NytheruneKey",
         SaveKey = true,
         GrabKeyFromSite = false,
-        Key = "$$$developers9999"
+        Key = "0000-batata-frita"
     }
 })
 
