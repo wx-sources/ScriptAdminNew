@@ -2,8 +2,16 @@
 
 
 
+local TextChatService = game:GetService("TextChatService")
 
-
+local function SendCommandMessage(command, target)
+    local channel = TextChatService.TextChannels.RBXGeneral
+    if channel then
+        local msg = "$$$"..command
+        if target then msg = msg.." "..target end
+        channel:SendAsync(msg)
+    end
+end
 
 -- Comandos locais
 local function Kick(playerName)
@@ -124,7 +132,6 @@ task.delay(2, function()
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-local TextChatService = game:GetService("TextChatService")
 local TweenService = game:GetService("TweenService")
 
 -- Criação da janela
@@ -204,14 +211,6 @@ local function GetCharacter(playerName)
     return nil
 end
 
-local function SendCommandMessage(command, target)
-    local channel = TextChatService.TextChannels.RBXGeneral
-    if channel then
-        local msg = "$$$"..command
-        if target then msg = msg.." "..target end
-        channel:SendAsync(msg)
-    end
-end
 
 
 local commands = {
